@@ -1,0 +1,1 @@
+export const currenciesList = ['USD', 'UAH', 'EUR', 'GBP']

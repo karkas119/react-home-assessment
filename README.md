@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Launch project locally
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the project directory, you need to run in the terminal:
 
-## Available Scripts
+### `npm i`
 
-In the project directory, you can run:
+After successful installation of all depencies you need to run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This command will launch the project on localhost:3000 in a new tab of your
+browser. 
+Please make sure that you have all necessary environment variables in `.env` file (just let me know if there are any issues).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# What was done within this task:
+1. There are 5 integrated endpoints (GET, POST, GET by Id, PUT and DELETE) 
+for `/documents` API.
 
-### `npm test`
+So, with this FE app it's possible to gel all documents for the client,
+create new document, get document by document id, update document and delete document.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. All security sensitive data is stored in environment variables (`.env` file).
 
-### `npm run build`
+3. A sample unit test for `DocumentsList` component was added with mocked API request.
+In order to launch unit-test execute `npm test` command in terminal.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. From external libraries I installed only minimum necessary libs: 
+`React testing library`, `http-proxy-middleware` to handle CORS issues and `react-router-dom`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Points for improvements:
+1. Adding css preprocessors, such as `sass` in order to have css nesting, mixins etc.
+2. Adding `React Query` for more convenient handling client-server async logic.
+3. Adding error handling, especially for network errors.
+4. Adding some modals with confirmation messages, especially for such as `Delete document` button 
+in order to avoid accidental user actions.
+5. Also considering atomic architecture for better scalability - atoms, molecules
+and organisms.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
