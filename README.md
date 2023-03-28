@@ -1,16 +1,18 @@
+# Home assessment to create react app with integrated API endpoints.
+
 # Launch project locally
 
 In the project directory, you need to run in the terminal:
 
 ### `npm i`
 
-After successful installation of all depencies you need to run:
+After successful installation of all dependencies you need to run:
 
 ### `npm start`
 
 This command will launch the project on localhost:3000 in a new tab of your
 browser. 
-Please make sure that you have all necessary environment variables in `.env` file (just let me know if there are any issues).
+Please make sure that you have all necessary environment variables in `.env` file.
 
 # What was done within this task:
 1. There are 5 integrated endpoints (GET, POST, GET by Id, PUT and DELETE) 
